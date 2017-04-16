@@ -1,0 +1,265 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+    <!--//总体的布局是一个竖排-->
+
+    <!--//第一行用editText来完成输入数据-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/edit_text"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="90sp"
+            android:maxLines="2"
+            android:hint="0"
+            android:textSize="40sp"
+            android:gravity="right|bottom">
+        </EditText>
+
+    </LinearLayout>
+     <!--第二行为" " √ x² 1/x 四个Button构成一个水平布局-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="39sp"
+            android:layout_weight="1">
+        </Button>
+        <Button
+            android:id="@+id/button_sqrt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="√"
+            android:textSize="39sp"
+            android:layout_weight="1">
+        </Button>
+        <Button
+            android:id="@+id/button_x2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="x²"
+            android:textSize="39sp"
+            android:layout_weight="1">
+        </Button>
+
+    <Button
+        android:id="@+id/button_dao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1/x"
+        android:textSize="39sp"
+        android:layout_weight="1">
+    </Button>
+</LinearLayout>
+     <!--第三行同上 CE C X ÷ 四个Button构成一个水平布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_CE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CE"
+            android:textSize="39sp">
+        </Button>
+
+        <Button
+            android:id="@+id/button_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="C" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_DEL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="dl" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_divide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="÷" />
+    </LinearLayout>
+    <!--第四行为7,8,9，X-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="39sp"
+            android:layout_weight="1">
+        </Button>
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="39sp"
+            android:layout_weight="1">
+        </Button>
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="39sp"
+            android:layout_weight="1">
+        </Button>
+        <Button
+            android:id="@+id/button_multiply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="39sp"
+            android:layout_weight="1">
+        </Button>
+    </LinearLayout>
+    <!--//第五行为4,5,6，- -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="4" >
+        </Button>
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="5" >
+        </Button>
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="6" >
+        </Button>
+        <Button
+            android:id="@+id/button_min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="-" >
+        </Button>
+    </LinearLayout>
+    <!--第6行为1,2,3，+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="1" >
+        </Button>
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="2" >
+        </Button>
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="3" >
+        </Button>
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="+" >
+        </Button>
+    </LinearLayout>
+    <!--第7行为±，0，.,=-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="±"
+            android:textSize="39sp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/button_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="0" >
+        </Button>
+        <Button
+            android:id="@+id/button_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="." >
+        </Button>
+        <Button
+            android:id="@+id/button_eq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="39sp"
+            android:text="=" >
+        </Button>
+    </LinearLayout>
+
+
+
+</LinearLayout>
